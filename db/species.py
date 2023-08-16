@@ -11,5 +11,3 @@ def create_species(db: Session, species: schemas.SpeciesCreate):
     db.commit()
     db.refresh(db_species)
     return db_species
-
-
